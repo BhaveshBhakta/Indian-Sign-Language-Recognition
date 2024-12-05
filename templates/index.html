@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Language Detection</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}  ">
+</head>
+<body>
+    <h1>Real-Time Sign Language Detection</h1>
+    <div id="video-container">
+        <img id="video-feed" src="/video_feed" alt="Video Feed" width="640" height="480">
+    </div>
+    <div id="actions">
+        <strong>Predicted Action:</strong> <span id="prediction">Waiting...</span>
+    </div>
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>
